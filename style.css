@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+*::selection{
+    user-select: none;
+    
+}
+body{
+    background: url(eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+/* star */
+.star{
+    position: fixed;
+}
+.star::before, .star::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\2726';
+    font-size: 5px;
+}
+.star:before{
+    color: transparent;
+    text-shadow: 0 0 3 rgb(189, 164, 42));
+}
+.star::after{
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+/* star end */
+#spaceship {
+    position: fixed;
+    width: 50px; /* Adjust the width of the spaceship */
+    height: auto;
+    pointer-events: none; /* Ensures that the spaceship doesn't interfere with mouse events */
+    transform-origin: 50% 50%; /* Set the rotation origin to the center of the spaceship */
+    transition: transform 0.1s; /* Add a smooth transition effect for rotation */
+}
+
+.form{
+    margin-top: 29px;
+    height: 47vh;
+    width: 40vh;
+    display: flexbox;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 30px;
+    backdrop-filter: blur(3px);
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) ;
+    
+}
+.container{
+    margin-left: 5px;
+}
+.heading{
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: auto;
+    height: 3vh;
+    padding-right:5px ;
+}
+#btn{
+    margin-left: 2px;
+    height: 5vh;
+    width: 95%;
+    font-size: 8px;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#btn:hover{
+    border: 1px solid grey;
+}
+.user{
+    margin: 10px 0;
+    width: 35vh;
+    border: 1px solid gray;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    padding: 3.5px;
+    justify-content: center;
+    cursor: pointer;
+}
+.user:hover{
+    border: 1px solid rgb(95, 95, 95);
+}
+.pass{
+    cursor: pointer;
+    margin: 10px 0;
+    width: 35vh;
+    border: 1px solid grey;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    padding: 3.5px;
+    justify-content: center;
+}
+.pass:hover{
+    border: 1px solid rgb(95, 95, 95);
+}
+input{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0 5px;
+    justify-content: center;
+    font-size: 9px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+#user:focus,#pass:focus{
+    outline: none;
+}
+.check{
+    margin: 10px 0;
+    display: flex;
+    font-size: 8.5px;
+    color: white;
+    text-align: center;
+    width: fit-content;
+}
+p{
+    cursor:default;
+}
+#forget{
+    padding-left: 23px;
+    cursor: pointer;
+}
+.reg{
+    display: flex;
+    font-size: 8.9px;
+    justify-content: space-between;
+    margin: 12px 0;
+    cursor: pointer;
+}
+h5{
+    font-size: 8px;
+}
+h5:hover{
+    color: blue;
+}
+#forget:hover{
+    text-decoration: underline;
+}
